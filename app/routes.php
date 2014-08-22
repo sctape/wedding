@@ -30,3 +30,8 @@ Route::get('/registry', [
         'as' => 'registry',
         'uses' => 'PagesController@registry'
     ]);
+
+Route::get('/events', [
+        'as' => 'events',
+        'uses' => 'PagesController@events'
+    ]);
