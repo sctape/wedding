@@ -1,16 +1,37 @@
 <?php
 
-use Illuminate\Auth\Reminders\RemindableTrait;
-use Illuminate\Auth\UserTrait;
 
 class Guest extends \Eloquent {
-    use UserTrait, RemindableTrait;
 
 	protected $fillable = [
         'first_name',
         'last_name',
-
+        'address',
+        'address2',
+        'address3',
+        'city',
+        'state',
+        'zip',
+        'email',
     ];
 
+    /**
+     * The database table used by this model
+     *
+     * @var string
+     */
     protected $table = 'guests';
+
+    /**
+     * Register a new user
+     *
+     * @param array $fields
+     * @return static
+     */
+    public static function create(array $fields)
+    {
+        $user = new static($fields);
+
+        return $user;
+    }
 }

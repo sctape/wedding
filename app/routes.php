@@ -35,3 +35,16 @@ Route::get('/events', [
         'as' => 'events',
         'uses' => 'PagesController@events'
     ]);
+
+/**
+ * Guests
+ */
+Route::get('/guests', [
+    'as' => 'guests_path',
+    'uses' => 'GuestsController@create'
+]);
+
+Route::post('/guests', [
+    'as' => 'guests_path',
+    'uses' => 'GuestsController@store'
+]);
