@@ -5,5 +5,6 @@
   <li class="{{ URL::current() == URL::route('locations') ? "active" : "" }}">{{ link_to_route('locations', 'Locations') }}</li>
   <li class="{{ URL::current() == URL::route('registry') ? "active" : "" }}">{{ link_to_route('registry', 'Registry') }}</li>
   <li class="{{ URL::current() == URL::route('events') ? "active" : "" }}">{{ link_to_route('events', 'Events') }}</li>
+  <li class="{{ URL::current() == URL::route('guests_path') ? "active" : "" }}">{{ link_to_route('guests_path', 'Guests') }}</li>
 </ul>
 </div>

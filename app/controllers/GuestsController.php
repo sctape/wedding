@@ -31,7 +31,12 @@ class GuestsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$input = Input::all();
+
+        $guest = Guest::create($input);
+        $guest->save();
+
+        return Redirect::back();
 	}
 
 

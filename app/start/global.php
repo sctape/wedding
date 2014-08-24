@@ -79,3 +79,13 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+/*
+|--------------------------------------------------------------------------
+| Require The Macros file
+|--------------------------------------------------------------------------
+|
+| Next we will load any custom form macros
+|
+*/
+require app_path() . '/misc/states_macro.php';
