@@ -8,15 +8,15 @@ class DatabaseSeeder extends Seeder {
      */
     protected $tables = [
         'guests',
-//        'statuses'
+        'tables'
     ];
 
     /**
      * @var array
      */
     protected $seeders = [
+        'TablesTableSeeder',
         'GuestsTableSeeder',
-//        'StatusesTableSeeder'
     ];
 
     /**

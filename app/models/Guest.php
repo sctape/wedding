@@ -22,6 +22,12 @@ class Guest extends Eloquent {
      */
     protected $table = 'guests';
 
+
+    public function myTable()
+    {
+        return $this->belongsTo('Table');
+    }
+
     /**
      * Register a new user
      *

@@ -7,6 +7,7 @@ class GuestsTableSeeder extends Seeder {
     public function run()
     {
         $faker = Faker::create();
+        $tables = Table::lists('id');
 
         foreach(range(1, 50) as $index)
         {
@@ -18,9 +19,10 @@ class GuestsTableSeeder extends Seeder {
                 'city' => $faker->city,
                 'state' => $faker->word,
                 'zip' => $faker->postcode,
+                'table_id' => $faker->randomElement($tables),
                 'created_at' => $faker->dateTime,
                 'updated_at' => $faker->dateTime,
-            ])->save();
+            ]);
         }
     }
 
