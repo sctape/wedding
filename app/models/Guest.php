@@ -1,7 +1,7 @@
 <?php
 
 
-class Guest extends \Eloquent {
+class Guest extends Eloquent {
 
 	protected $fillable = [
         'first_name',
@@ -28,7 +28,7 @@ class Guest extends \Eloquent {
      * @param array $fields
      * @return static
      */
-    public static function create(array $fields)
+    public static function register(array $fields)
     {
         $user = new static($fields);
 

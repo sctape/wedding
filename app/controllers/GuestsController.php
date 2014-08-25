@@ -33,7 +33,7 @@ class GuestsController extends \BaseController {
 	{
 		$input = Input::all();
 
-        $guest = Guest::create($input);
+        $guest = Guest::register($input);
         $guest->save();
 
         return Redirect::back();

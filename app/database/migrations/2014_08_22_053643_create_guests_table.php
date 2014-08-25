@@ -19,8 +19,8 @@ class CreateGuestsTable extends Migration {
             $table->string('last_name');
             $table->string('email');
             $table->string('address');
-            $table->string('address2');
-            $table->string('address3');
+            $table->string('address2')->nullable();
+            $table->string('address3')->nullable();
             $table->string('city');
             $table->string('state');
             $table->integer('zip');
