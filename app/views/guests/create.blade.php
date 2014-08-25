@@ -2,50 +2,33 @@
 
 
 @section('content')
+<div class="row">
+    <div class="col-md-6">
+        @include('guests.partials.create-guest-form')
+    </div>
 
     <div class="col-md-6">
-        {{ Form::open(['route' => 'guests_path']) }}
+        <table class="table table-striped table-hover table-condensed">
+            <thead>
+                <tr>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
 
-        <div class="form-group">
-            {{ Form::label('first_name', "First Name:") }}
-            {{ Form::text('first_name', null, ['class' => 'form-control']) }}
-        </div>
-
-        <div class="form-group">
-            {{ Form::label('last_name', "Last Name:") }}
-            {{ Form::text('last_name', null, ['class' => 'form-control']) }}
-        </div>
-
-        <div class="form-group">
-            {{ Form::label('email', "Email:") }}
-            {{ Form::text('email', null, ['class' => 'form-control']) }}
-        </div>
-
-        <div class="form-group">
-            {{ Form::label('address', "Address:") }}
-            {{ Form::text('address', null, ['class' => 'form-control']) }}
-        </div>
-
-        <div class="form-group">
-            {{ Form::label('city', "City:") }}
-            {{ Form::text('city', null, ['class' => 'form-control']) }}
-        </div>
-
-        <div class="form-group">
-            {{ Form::label('state', "State:") }}
-            {{ Form::states('state', null, ['class' => 'form-control']) }}
-        </div>
-
-        <div class="form-group">
-            {{ Form::label('zip', "Zip:") }}
-            {{ Form::text('zip', null, ['class' => 'form-control']) }}
-        </div>
-
-        <div class="form-group">
-            {{ Form::submit('Save', ['class' => 'btn btn-primary']) }}
-        </div>
-
-        {{ Form::close() }}
+            <tbody>
+                @foreach($guests as $guest)
+                    <tr>
+                        <td>{{ $guest->first_name }}</td>
+                        <td>{{ $guest->last_name }}</td>
+                        <td>{{ $guest->email }}</td>
+                    </tr>
+                @endforeach
+            </tbody>
+        </table>
     </div>
+</div>
+
 
 @stop

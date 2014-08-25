@@ -20,7 +20,8 @@ class GuestsController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('guests.create');
+        $guests = Guest::all();
+		return View::make('guests.create')->withGuests($guests);
 	}
 
 
