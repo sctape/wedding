@@ -15,11 +15,10 @@
     </div>
 
 
-    @include('layouts.partials.nav')
 
 
     <div class="container">
-
+        @include('layouts.partials.nav')
 
         @yield('content')
     </div>

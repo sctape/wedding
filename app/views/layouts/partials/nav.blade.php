@@ -1,4 +1,3 @@
-<div class="container">
     {{  Navigation::pills([
         [
             'title' => 'Home',
@@ -24,5 +23,4 @@
             'title' => 'Guests',
             'link' => route('guests_path')
         ],
-    ], ['class' => 'wedding-nav']) }}
-</div>
+    ], ['class' => 'wedding-nav pull-left'])->stacked() }}
