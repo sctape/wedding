@@ -1,10 +1,28 @@
 <div class="container">
-<ul class="nav nav-pills wedding-nav" role="tablist">
-  <li class="{{ URL::current() == URL::route('home') ? "active" : "" }}">{{ link_to_route('home', 'Home') }}</li>
-  <li class="{{ URL::current() == URL::route('rsvp_path') ? "active" : "" }}">{{ link_to_route('rsvp_path', 'RSVP') }}</li>
-  <li class="{{ URL::current() == URL::route('locations') ? "active" : "" }}">{{ link_to_route('locations', 'Locations') }}</li>
-  <li class="{{ URL::current() == URL::route('registry') ? "active" : "" }}">{{ link_to_route('registry', 'Registry') }}</li>
-  <li class="{{ URL::current() == URL::route('events') ? "active" : "" }}">{{ link_to_route('events', 'Events') }}</li>
-  <li class="{{ URL::current() == URL::route('guests_path') ? "active" : "" }}">{{ link_to_route('guests_path', 'Guests') }}</li>
-</ul>
+    {{  Navigation::pills([
+        [
+            'title' => 'Home',
+            'link' => route('home')
+        ],
+        [
+            'title' => 'RSVP',
+            'link' => route('rsvp_path')
+        ],
+        [
+            'title' => 'Locations',
+            'link' => route('locations')
+        ],
+        [
+            'title' => 'Registry',
+            'link' => route('registry')
+        ],
+        [
+            'title' => 'Events',
+            'link' => route('events')
+        ],
+        [
+            'title' => 'Guests',
+            'link' => route('guests_path')
+        ],
+    ], ['class' => 'wedding-nav']) }}
 </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Salmon Jess Wedding</title>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    {{ Helpers::css() }}
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -25,7 +25,7 @@
     </div>
 
     <script src="//code.jquery.com/jquery.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    {{ Helpers::js() }}
     <script>$('#flash-overlay-modal').modal();</script>
 </body>
 </html>
