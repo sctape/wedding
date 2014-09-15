@@ -216,7 +216,7 @@ return array(
         'Panel' => 'Bootstrapper\Facades\Panel',
         'ProgressBar' => 'Bootstrapper\Facades\ProgressBar',
         'Tabbable' => 'Bootstrapper\Facades\Tabbable',
-        'Table' => 'Bootstrapper\Facades\Table',
+//        'Table' => 'Bootstrapper\Facades\Table',
         'Thumbnail' => 'Bootstrapper\Facades\Thumbnail',
 
 	),

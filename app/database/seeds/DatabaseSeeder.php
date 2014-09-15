@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder {
      * @var array
      */
     protected $seeders = [
+        'InvitesTableSeeder',
         'TablesTableSeeder',
         'GuestsTableSeeder',
     ];

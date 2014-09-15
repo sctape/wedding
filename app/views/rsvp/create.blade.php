@@ -5,10 +5,8 @@
 <div class="row">
     <div class="col-md-6">
     <div class="form-group rsvp_button_container">
-    {{ ButtonGroup::withContents([
-                        Button::success('I gladly accept!'),
-                        Button::warning('I regretfully decline'),
-                      ]) }}
+        {{ Button::withValue('I gladly accept!')->withAttributes(['id' => 'rsvp-accept']) }}
+        {{ Button::withValue('I regretfully decline')->withAttributes(['id' => 'rsvp-decline']) }}
     </div>
 
 
@@ -17,7 +15,7 @@
                Form::select('num_guests', [0, 1, 2, 3, 4, 5])
            )->withAttributes(['class' => 'num_guests_container']) }}
 
-<div class="guest-sub-form">
+<div id="guest-sub-form-original" class="guest-sub-form">
  {{ ControlGroup::generate(
                    Form::label('name', 'Name'),
                    Form::text('name')
@@ -47,7 +45,7 @@
                        ],
                null,
                5
-               )->withAttributes(['class' => 'food']) }}
+               )}}
 </div>
 
     </div>

@@ -48,3 +48,16 @@ Route::post('/guests', [
     'as' => 'guests_path',
     'uses' => 'GuestsController@store'
 ]);
+
+/**
+ * Invites
+ */
+Route::get('/invites', [
+    'as' => 'invites_path',
+    'uses' => 'InvitesController@create'
+]);
+
+Route::post('/invites', [
+    'as' => 'invites_path',
+    'uses' => 'InvitesController@store'
+]);

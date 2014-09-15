@@ -23,4 +23,8 @@
             'title' => 'Guests',
             'link' => route('guests_path')
         ],
+        [
+            'title' => 'Invites',
+            'link' => route('invites_path')
+        ],
     ], ['class' => 'wedding-nav pull-left'])->stacked() }}
