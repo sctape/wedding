@@ -13,6 +13,8 @@ class Guest extends Eloquent {
         'state',
         'zip',
         'email',
+        'table_id',
+        'invite_id',
     ];
 
     /**

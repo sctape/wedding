@@ -19,6 +19,7 @@
 
     <div class="container">
         @include('layouts.partials.nav')
+        @include('flash::message')
 
         @yield('content')
     </div>

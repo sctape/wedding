@@ -30,4 +30,6 @@ class Invite extends Eloquent {
     {
         return $this->hasMany('Guest');
     }
+
+
 }

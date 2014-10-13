@@ -1,4 +1,4 @@
-{{ Form::open(['route' => 'guests_path', 'class' => 'form-horizontal']) }}
+{{ Form::open(['route' => 'invites_path', 'class' => 'form-horizontal']) }}
 
     <div class="form-group">
         {{ Form::label('name', "RSVP Name:", ['class' => 'col-sm-2']) }}

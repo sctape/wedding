@@ -32,7 +32,27 @@ class InvitesController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+        //Get all the input
+		$input = Input::all();
+
+        //Create invite with the invite specific stuff
+        $invite = Invite::create(Input::only(['name', 'email', 'address', 'address2', 'city', 'state', 'zip']));
+
+        $numInvites = 0;
+        for($i=1; $i<=5; $i++) {
+            if (!empty($input['first_name' . $i])) {
+                $guest = Guest::create([
+                    'first_name' => $input['first_name' . $i],
+                    'last_name' => $input['last_name' . $i],
+                    'invite_id' => $invite->id,
+                ]);
+
+                $numInvites++;
+            }
+        }
+
+        Flash::success("Invite successfully created with $numInvites guests.");
+        return Redirect::back();
 	}
 
 	/**
@@ -57,6 +77,7 @@ class InvitesController extends \BaseController {
 	public function edit($id)
 	{
 		//
+
 	}
 
 	/**
