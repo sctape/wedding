@@ -61,3 +61,13 @@ Route::post('/invites', [
     'as' => 'invites_path',
     'uses' => 'InvitesController@store'
 ]);
+
+Route::get('/invites/{id}/edit', [
+    'as' => 'invites_edit_path',
+    'uses' => 'InvitesController@edit'
+]);
+
+Route::put('/invites/{id}', [
+    'as' => 'invites_update_path',
+    'uses' => 'InvitesController@update'
+]);

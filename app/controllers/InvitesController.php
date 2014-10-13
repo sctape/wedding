@@ -76,8 +76,7 @@ class InvitesController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		//
-
+        return View::make('invites.edit')->withInvite(Invite::find($id));
 	}
 
 	/**
@@ -89,7 +88,27 @@ class InvitesController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		//
+        $invite = Invite::findOrFail($id);
+        if (!$invite->update(Input::only(['name', 'email', 'address', 'address2', 'city', 'zip']))) {
+            Flash::error('Something went wrong!');
+            return Redirect::back()
+                ->withInput();
+        }
+
+        $input = Input::all();
+
+        for($i=1; $i<=5; $i++) {
+            if (!empty($input['id' . $i])) {
+                $guest = Guest::findOrFail($input['id' . $i]);
+                $guest->update([
+                    'first_name' => $input['first_name' . $i],
+                    'last_name' => $input['last_name' . $i],
+                ]);
+            }
+        }
+
+        Flash::success('Invite successfully updated.');
+        return Redirect::back();
 	}
 
 	/**
