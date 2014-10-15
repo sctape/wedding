@@ -52,22 +52,24 @@ Route::post('/guests', [
 /**
  * Invites
  */
-Route::get('/invites', [
-    'as' => 'invites_path',
-    'uses' => 'InvitesController@create'
-]);
+//Route::get('/invites', [
+//    'as' => 'invites_path',
+//    'uses' => 'InvitesController@create'
+//]);
+//
+//Route::post('/invites', [
+//    'as' => 'invites_path',
+//    'uses' => 'InvitesController@store'
+//]);
+//
+//Route::get('/invites/{id}/edit', [
+//    'as' => 'invites_edit_path',
+//    'uses' => 'InvitesController@edit'
+//]);
+//
+//Route::put('/invites/{id}', [
+//    'as' => 'invites_update_path',
+//    'uses' => 'InvitesController@update'
+//]);
 
-Route::post('/invites', [
-    'as' => 'invites_path',
-    'uses' => 'InvitesController@store'
-]);
-
-Route::get('/invites/{id}/edit', [
-    'as' => 'invites_edit_path',
-    'uses' => 'InvitesController@edit'
-]);
-
-Route::put('/invites/{id}', [
-    'as' => 'invites_update_path',
-    'uses' => 'InvitesController@update'
-]);
+Route::resource('invites', 'InvitesController');

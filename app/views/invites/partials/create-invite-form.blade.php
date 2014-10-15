@@ -1,7 +1,7 @@
 @if(isset($invite))
-    {{ Form::model($invite, array('method'=>'put', 'route' => array('invites_update_path', $invite->id), 'class' => 'form-horizontal')) }}
+    {{ Form::model($invite, array('method'=>'put', 'route' => array('invites.update', $invite->id), 'class' => 'form-horizontal')) }}
 @else
-    {{ Form::open(['route' => 'invites_path', 'class' => 'form-horizontal']) }}
+    {{ Form::open(['route' => 'invites.create', 'class' => 'form-horizontal']) }}
 @endif
 
     <div class="form-group">
