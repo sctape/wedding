@@ -10,7 +10,8 @@ class InvitesController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('invites.index');
+        $invites = Invite::has('guests')->get();
+		return View::make('invites.index')->with('invites', $invites);
 	}
 
 	/**

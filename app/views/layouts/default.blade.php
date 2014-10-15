@@ -14,14 +14,14 @@
         </div>
     </div>
 
-
-
-
     <div class="container">
-        @include('layouts.partials.nav')
-        @include('flash::message')
-
-        @yield('content')
+        <div class="col-sm-2">
+            @include('layouts.partials.nav')
+        </div>
+        <div class="col-sm-10">
+            @include('flash::message')
+            @yield('content')
+        </div>
     </div>
 
     <script src="//code.jquery.com/jquery.js"></script>

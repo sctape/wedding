@@ -3,6 +3,8 @@
 
 class Invite extends Eloquent {
 
+    use Laracasts\Presenter\PresentableTrait;
+
 	protected $fillable = [
         'name',
         'address',
@@ -20,6 +22,8 @@ class Invite extends Eloquent {
      */
     protected $table = 'invites';
 
+    /** @var string View presenter to store view logic */
+    protected $presenter = 'InvitePresenter';
 
     /**
      * An invite has many guests

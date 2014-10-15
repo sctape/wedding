@@ -27,4 +27,4 @@
             'title' => 'Invites',
             'link' => route('invites.index')
         ],
-    ], ['class' => 'wedding-nav pull-left'])->stacked() }}
+    ], ['class' => 'wedding-nav'])->stacked() }}

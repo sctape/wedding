@@ -3,6 +3,8 @@
 
 class Guest extends Eloquent {
 
+    use Laracasts\Presenter\PresentableTrait;
+
 	protected $fillable = [
         'first_name',
         'last_name',
@@ -24,6 +26,8 @@ class Guest extends Eloquent {
      */
     protected $table = 'guests';
 
+    /** @var string View presenter to store view logic */
+    protected $presenter = 'GuestPresenter';
 
     /**
      * Return the table that this user is assigned to
