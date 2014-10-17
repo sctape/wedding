@@ -17,6 +17,7 @@ class Guest extends Eloquent {
         'email',
         'table_id',
         'invite_id',
+        'attending'
     ];
 
     /**

@@ -13,6 +13,7 @@ class Invite extends Eloquent {
         'state',
         'zip',
         'email',
+        'rsvp'
     ];
 
     /**
@@ -35,5 +36,21 @@ class Invite extends Eloquent {
         return $this->hasMany('Guest');
     }
 
+    public function notAttending()
+    {
+        //If the invite hasn't responded, then we don't know they're not attending
+        if ($this->rsvp == false) {
+            return true;
+        }
+
+        foreach($this->guests() as $guest) {
+            if ($guest->attending) {
+                //If at least one guest is attending, then we'll return false
+                return false;
+            }
+        }
+
+        return true;
+    }
 
 }

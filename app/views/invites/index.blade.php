@@ -7,7 +7,7 @@
     </p>
     <div class="media-list">
         @foreach($invites as $invite)
-            <div class="media">
+            <div class="media {{ $invite->rsvp ? "bg-success" : ($invite->notAttending() ? "bg-danger" : "") }}">
                 <a class="pull-left" href="{{ route('invites.edit', ['id' => $invite->id]) }}">
                     <img style="width: 30px;" class="media-object" src="/images/guest.png" alt="...">
                 </a>

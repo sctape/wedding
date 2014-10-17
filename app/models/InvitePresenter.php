@@ -11,8 +11,8 @@ class InvitePresenter extends Laracasts\Presenter\Presenter {
     {
         $guests = [];
 
-        foreach($this->entity->guests()->get() as $guest) {
-            $guests[] = $guest->present()->fullName;
+        foreach($this->entity->guests as $guest) {
+            $guests[] = "<span class='" . ($guest->attending == false ? 'text-danger' : '') . "'>" . $guest->present()->fullName . "</span>";
         }
 
         if (count($guests) <= 2) {

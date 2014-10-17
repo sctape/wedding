@@ -8,7 +8,8 @@ class DatabaseSeeder extends Seeder {
      */
     protected $tables = [
         'guests',
-        'tables'
+        'tables',
+        'invites',
     ];
 
     /**
