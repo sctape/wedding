@@ -21,10 +21,15 @@ Route::get('/locations', [
         'uses' => 'PagesController@locations'
     ]);
 
-Route::get('/rsvp', [
+Route::get('/rsvp/{name}', [
         'as' => 'rsvp_path',
         'uses' => 'RsvpController@create'
     ]);
+
+Route::put('rsvp/{invite_id}', [
+    'as' => 'rsvp.update',
+    'uses' => 'RsvpController@update'
+]);
 
 Route::get('/registry', [
         'as' => 'registry',

@@ -18,9 +18,11 @@ class RsvpController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function create($name)
 	{
-		return View::make('rsvp.create');
+        $invite = Invite::where('name', '=', $name)->first();
+//		return View::make('rsvp.create')->with('invite', $invite);
+		return View::make('rsvp.create')->with(['invite' => $invite, 'pageTitle' => 'RSVP']);
 	}
 
 
@@ -59,15 +61,16 @@ class RsvpController extends \BaseController {
 	}
 
 
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param $invite_id
+     * @return Response
+     */
+	public function update($invite_id)
 	{
-		//
+        dd(Input::all());
+		return $invite_id;
 	}
 
 
