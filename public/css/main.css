@@ -1,6 +1,7 @@
 .wedding-nav {
-    border-right: 1px solid #b0b0b0;
-    padding-right: 1em;
+    /*border-right: 1px solid #b0b0b0;*/
+    /*padding-right: 1em;*/
+    margin-bottom: 1em;
 }
 
 .fluid-wrapper {

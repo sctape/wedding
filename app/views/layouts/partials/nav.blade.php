@@ -1,4 +1,5 @@
-    {{  Navigation::pills([
+@if(Auth::check())
+{{  Navigation::pills([
         [
             'title' => 'Home',
             'link' => route('home')
@@ -27,4 +28,5 @@
             'title' => 'Invites',
             'link' => route('invites.index')
         ],
-    ], ['class' => 'wedding-nav'])->stacked() }}
+    ], ['class' => 'wedding-nav']) }}
+@endif

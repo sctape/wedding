@@ -78,3 +78,13 @@ Route::post('/guests', [
 //]);
 
 Route::resource('invites', 'InvitesController');
+
+/**
+ * Sessions
+ */
+Route::get('login', ['as' => 'sessions.create', 'uses' =>'SessionsController@create']);
+Route::post('login', ['as' => 'sessions.create', 'uses' =>'SessionsController@store']);
+Route::get('logout', [
+    'as' => 'sessions.destroy',
+    'uses' => 'SessionsController@destroy'
+]);

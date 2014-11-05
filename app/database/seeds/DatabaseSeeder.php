@@ -10,6 +10,7 @@ class DatabaseSeeder extends Seeder {
         'guests',
         'tables',
         'invites',
+        'users'
     ];
 
     /**
@@ -19,6 +20,7 @@ class DatabaseSeeder extends Seeder {
         'InvitesTableSeeder',
         'TablesTableSeeder',
         'GuestsTableSeeder',
+        'UsersTableSeeder'
     ];
 
     /**
