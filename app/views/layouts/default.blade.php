@@ -8,15 +8,15 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="page-header">
-            @if(Auth::check())
-                <div class="pull-right"><a class="text-muted" href="{{ route('sessions.destroy') }}">Logout</a></div>
-            @endif
-            <h1>Sam & Jess Wedding <small>September 6th, 2015</small></h1>
+    @if(Auth::check())
+        <div class="container">
+            <div class="page-header">
+                    <div class="pull-right"><a class="text-muted" href="{{ route('sessions.destroy') }}">Logout</a></div>
+                <h1>Sam & Jess Wedding <small>September 6th, 2015</small></h1>
+            </div>
+            @include('layouts.partials.nav')
         </div>
-        @include('layouts.partials.nav')
-    </div>
+    @endif
 
     <div class="container">
             @include('layouts.partials.page-header')
