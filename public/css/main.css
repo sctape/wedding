@@ -17,3 +17,7 @@
     height: 100%;
     border: none;
 }
+
+body {
+    background-image: url("/images/linen-bg.png");
+}
