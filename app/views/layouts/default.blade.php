@@ -9,13 +9,10 @@
 <body>
 
     @if(Auth::check())
-        <div class="container">
-            <div class="page-header">
-                    <div class="pull-right"><a class="text-muted" href="{{ route('sessions.destroy') }}">Logout</a></div>
-                <h1>Sam & Jess Wedding <small>September 6th, 2015</small></h1>
-            </div>
-            @include('layouts.partials.nav')
-        </div>
+        <img id="header-img" class="center-block" src="/images/header.png" alt=""/>
+            {{--<div class="pull-right"><a class="text-muted" href="{{ route('sessions.destroy') }}">Logout</a></div>--}}
+            {{--<h1>Sam & Jess Wedding <small>September 6th, 2015</small></h1>--}}
+            {{--@include('layouts.partials.nav')--}}
     @endif
 
     <div class="container">
@@ -23,6 +20,8 @@
             @include('flash::message')
             @yield('content')
     </div>
+
+    @include('layouts.partials.bottom-nav')
 
     <script src="//code.jquery.com/jquery.js"></script>
     {{ Helpers::js() }}
