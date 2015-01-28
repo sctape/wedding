@@ -20,17 +20,18 @@
 
 body {
     background-image: url("/images/linen-bg.png");
-    padding-bottom: 70px;
+    padding-bottom: 180px;
 }
 
 #header-img {
-    width: 75%;
+    width: 650px;
     position: relative;
     top: -15px;
 }
 
 .bottom-nav {
     background-image: url("/images/linen-bg.png");
+    background-repeat: repeat;
 }
 
 #footer-img {
@@ -38,4 +39,6 @@ body {
     background-image: url("/images/hover-colors.png");
     background-repeat: no-repeat;
     background-position: bottom;
+    position: relative;
+    top:32px;
 }

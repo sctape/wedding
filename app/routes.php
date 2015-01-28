@@ -16,43 +16,48 @@ Route::get('/', [
         'uses' => 'PagesController@home'
     ]);
 
-Route::get('/locations', [
+Route::group(['before' => 'auth'], function(){
+    Route::get('/locations', [
         'as' => 'locations',
         'uses' => 'PagesController@locations'
     ]);
 
-Route::get('/rsvp/{name}', [
+    Route::get('/rsvp/{name}', [
         'as' => 'rsvp_path',
         'uses' => 'RsvpController@create'
     ]);
 
-Route::put('rsvp/{invite_id}', [
-    'as' => 'rsvp.update',
-    'uses' => 'RsvpController@update'
-]);
+    Route::put('rsvp/{invite_id}', [
+        'as' => 'rsvp.update',
+        'uses' => 'RsvpController@update'
+    ]);
 
-Route::get('/registry', [
+    Route::get('/registry', [
         'as' => 'registry',
         'uses' => 'PagesController@registry'
     ]);
 
-Route::get('/events', [
+    Route::get('/events', [
         'as' => 'events',
         'uses' => 'PagesController@events'
     ]);
 
-/**
- * Guests
- */
-Route::get('/guests', [
-    'as' => 'guests_path',
-    'uses' => 'GuestsController@create'
-]);
+    /**
+     * Guests
+     */
+    Route::get('/guests', [
+        'as' => 'guests_path',
+        'uses' => 'GuestsController@create'
+    ]);
 
-Route::post('/guests', [
-    'as' => 'guests_path',
-    'uses' => 'GuestsController@store'
-]);
+    Route::post('/guests', [
+        'as' => 'guests_path',
+        'uses' => 'GuestsController@store'
+    ]);
+
+    Route::resource('invites', 'InvitesController');
+});
+
 
 /**
  * Invites
@@ -76,8 +81,6 @@ Route::post('/guests', [
 //    'as' => 'invites_update_path',
 //    'uses' => 'InvitesController@update'
 //]);
-
-Route::resource('invites', 'InvitesController');
 
 /**
  * Sessions

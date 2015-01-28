@@ -21,7 +21,9 @@
             @yield('content')
     </div>
 
-    @include('layouts.partials.bottom-nav')
+    @if(Auth::check())
+        @include('layouts.partials.bottom-nav')
+    @endif
 
     <script src="//code.jquery.com/jquery.js"></script>
     {{ Helpers::js() }}
