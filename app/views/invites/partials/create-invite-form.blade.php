@@ -35,7 +35,7 @@
     <div class="form-group">
         {{ Form::label('state', "State:", ['class' => 'col-sm-2']) }}
         <div class="col-sm-10">
-            {{ Form::states('state', null, ['class' => 'form-control']) }}
+            {{ Form::states('state', ((isset($invite) ? $invite->state : null)), ['class' => 'form-control']) }}
         </div>
     </div>
 
