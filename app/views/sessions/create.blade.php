@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-<div class="col-md-6">
+<div class="col-xs-6">
 
     @include('layouts.partials.errors')
 

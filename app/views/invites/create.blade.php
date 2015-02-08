@@ -2,6 +2,8 @@
 
 @section('content')
 <div class="row">
-    @include('invites.partials.create-invite-form')
+    <div class="col-xs-push-2 col-xs-8">
+        @include('invites.partials.create-invite-form')
+    </div>
 </div>
 @stop

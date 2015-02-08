@@ -3,11 +3,11 @@
 
 @section('content')
 <div class="row">
-    <div class="col-md-5">
+    <div class="col-xs-5">
         @include('guests.partials.create-guest-form')
     </div>
 
-    <div class="col-md-5">
+    <div class="col-xs-5">
         <table class="table table-striped table-hover table-condensed">
             <thead>
                 <tr>
