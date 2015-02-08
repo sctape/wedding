@@ -30,15 +30,62 @@ body {
 }
 
 .bottom-nav {
-    background-image: url("/images/linen-bg.png");
-    background-repeat: repeat;
+    /*background: url("/images/linen-bg.png") repeat;*/
 }
 
 #footer-img {
-    height: 180px;
-    background-image: url("/images/hover-colors.png");
-    background-repeat: no-repeat;
-    background-position: bottom;
+    height: 179.5px;
+    background: url("/images/footer-nav.png") no-repeat top;
     position: relative;
-    top:32px;
+    top:2px;
+}
+
+.nav-hover-buttons {
+    display: inline-block;
+    position: relative;
+}
+
+#events-link {
+    /*background: gray;*/
+    width: 159px;
+    height: 151px;
+    left: 61px;
+    top: 46px;
+}
+
+#rsvp-link {
+    /*background: black;*/
+    width: 184px;
+    height: 83px;
+    left: 57px;
+    top: 14px;
+}
+
+#home-link {
+    /*background: red;*/
+    width: 132px;
+    height: 163px;
+    left: 53px;
+    top: 15px;
+}
+
+#registry-link {
+    /*background: green;*/
+    width: 187px;
+    height: 124px;
+    left: 49px;
+    top: 16px;
+}
+
+#travel-link {
+    /*background: pink;*/
+    width: 143px;
+    height: 95px;
+    left: 45px;
+    top: 14px;
+}
+
+.container {
+    width: 970px;
+    max-width: none !important;
 }

@@ -28,6 +28,7 @@
     <script src="//code.jquery.com/jquery.js"></script>
     {{ Helpers::js() }}
     {{ HTML::script('js/rsvp.js') }}
+    {{ HTML::script('js/nav.js') }}
     <script>$('#flash-overlay-modal').modal();</script>
 </body>
 </html>
