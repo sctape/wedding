@@ -24,9 +24,9 @@ body {
 }
 
 #header-img {
-    width: 650px;
+    width: 1000px;
     position: relative;
-    top: -15px;
+    top: -18px;
 }
 
 .bottom-nav {
@@ -88,4 +88,12 @@ body {
 .container {
     width: 970px;
     max-width: none !important;
+}
+
+#registry-header {
+    width: 900px;
+    position: relative;
+    top: -203px;
+    left: 58px;
+    z-index: -1;
 }

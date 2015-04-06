@@ -9,7 +9,7 @@
 <body>
 
     @if(Auth::check())
-        <img id="header-img" class="center-block" src="/images/header2.png" alt=""/>
+        <img id="header-img" class="center-block" src="/images/header4.png" alt=""/>
             {{--<div class="pull-right"><a class="text-muted" href="{{ route('sessions.destroy') }}">Logout</a></div>--}}
             {{--<h1>Sam & Jess Wedding <small>September 6th, 2015</small></h1>--}}
             {{--@include('layouts.partials.nav')--}}
