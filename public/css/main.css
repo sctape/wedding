@@ -24,9 +24,10 @@ body {
 }
 
 #header-img {
-    width: 1000px;
-    position: relative;
-    top: -18px;
+    background-image: url("/images/header-final.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 493px;
 }
 
 .bottom-nav {
@@ -91,9 +92,27 @@ body {
 }
 
 #registry-header {
-    width: 900px;
-    position: relative;
-    top: -203px;
-    left: 58px;
     z-index: -1;
+    background-image: url("/images/registry-header.png");
+    min-height: 284px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 970px;
+    position: absolute;
+    width: 100%;
+    top: 203px;
+}
+
+/**
+ * Bootstrap overrides
+ */
+.thumbnail {
+    background: none;
+    border: none;
+     -webkit-box-shadow: none;
+     box-shadow: none;
+}
+
+.page-header {
+    border: none;
 }

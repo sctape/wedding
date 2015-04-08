@@ -9,11 +9,13 @@
 <body>
 
     @if(Auth::check())
-        <img id="header-img" class="center-block" src="/images/header4.png" alt=""/>
+        <div id="header-img" class="center-block"></div>
             {{--<div class="pull-right"><a class="text-muted" href="{{ route('sessions.destroy') }}">Logout</a></div>--}}
             {{--<h1>Sam & Jess Wedding <small>September 6th, 2015</small></h1>--}}
             {{--@include('layouts.partials.nav')--}}
     @endif
+
+    @yield('sub-header')
 
     <div class="container">
             @include('layouts.partials.page-header')
