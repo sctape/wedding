@@ -34,6 +34,14 @@ class PagesController extends \BaseController {
 		return View::make('pages.registry');
 	}
 
+    /**
+     *
+     */
+    public function travel()
+    {
+        return View::make('pages.travel');
+    }
+
 
 	/**
 	 * Display the specified resource.

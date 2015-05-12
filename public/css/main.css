@@ -103,6 +103,18 @@ body {
     top: 203px;
 }
 
+#travel-header {
+    z-index: -1;
+    background-image: url("/images/travel-header.png");
+    min-height: 284px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 700px;
+    position: absolute;
+    width: 100%;
+    top: 260px;
+}
+
 /**
  * Bootstrap overrides
  */
@@ -115,4 +127,8 @@ body {
 
 .page-header {
     border: none;
+}
+
+.hotel-image {
+    width: 200px;
 }
