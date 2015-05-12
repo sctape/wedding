@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-
     @if(Auth::check())
         <div id="header-img" class="center-block"></div>
             {{--<div class="pull-right"><a class="text-muted" href="{{ route('sessions.destroy') }}">Logout</a></div>--}}

@@ -115,6 +115,18 @@ body {
     top: 260px;
 }
 
+#story-header {
+    z-index: -1;
+    background-image: url("/images/story-header.png");
+    min-height: 284px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 700px;
+    position: absolute;
+    width: 100%;
+    top: 220px;
+}
+
 /**
  * Bootstrap overrides
  */

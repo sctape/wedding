@@ -42,6 +42,11 @@ Route::group(['before' => 'auth'], function(){
         'uses' => 'PagesController@travel'
     ]);
 
+    Route::get('/story', [
+        'as' => 'story',
+        'uses' => 'PagesController@story'
+    ]);
+
     Route::get('/events', [
         'as' => 'events',
         'uses' => 'PagesController@events'

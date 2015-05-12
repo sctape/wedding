@@ -42,6 +42,11 @@ class PagesController extends \BaseController {
         return View::make('pages.travel');
     }
 
+    public function story()
+    {
+        return View::make('pages.story');
+    }
+
 
 	/**
 	 * Display the specified resource.
