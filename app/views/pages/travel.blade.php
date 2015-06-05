@@ -73,7 +73,7 @@
         <div class="col-md-10 col-md-offset-1">
 
             <div class="media">
-                <div class="media-left media-right">
+                <div class="media-left">
                     <a href="https://www.airbnb.com/s/2715-Aldrich-Avenue-South--Minneapolis--MN--United-States?checkin=09%2F04%2F2015&checkout=09%2F07%2F2015&guests=2&source=bb&ss_id=yk43y209">
                         <img class="media-object" src="/images/airbnb-logo.png" alt="Airbnb" style="width: 200px;">
                     </a>
