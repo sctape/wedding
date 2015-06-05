@@ -11,15 +11,15 @@
         </div>
         <div class="col-md-9">
             <p class="lead page-header">
-                Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                <br/>
-                <br/>
+                Jess and Sam met during new student orientation their first year at Grinnell College.  They were soon fast friends and supported each other through late night study sessions, grilled-cheese making, and many, many costume parties.  Sam shares a birthday with Jess’ mom, Linda (and the moon landing), and spent many birthdays with the Walther-Cheney household before they began dating.  After five years of friendship, and numerous events attended as platonic “plus ones” for each other, they decided to jump in feet first.  No one was surprised.  Four years later, they have two lovely cats, Molly and Toby, have played innumerable board games, watched or played in countless hours of roller derby, and enjoyed the heck out of life together.  They are thrilled to invite you to their home for their wedding ceremony.
+            </p>
 
-                It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-                <br/>
-                <br/>
+            <p class="lead">
+                Sam is originally from Omaha, Nebraska and works at a small software company that produces educational software for paramedics and EMTs in training.
+            </p>
 
-                The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then
+            <p class="lead">
+                Jess made the move across the river from Saint Paul to Minneapolis in 2010 and recently graduated with her Master’s degree in Social Work from the University of Minnesota.
             </p>
         </div>
     </div>
