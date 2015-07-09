@@ -91,6 +91,32 @@ body {
     max-width: none !important;
 }
 
+#rsvp-header {
+    z-index: -1;
+    background-image: url("/images/rsvp-header.png");
+    min-height: 284px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 970px;
+    position: absolute;
+    width: 100%;
+    top: 276px;
+    background-clip: content-box;
+    background-position-x: 404px;
+}
+
+#events-header {
+    z-index: -1;
+    background-image: url("/images/events-header.png");
+    min-height: 300px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 970px;
+    position: absolute;
+    width: 100%;
+    top: 261px;
+}
+
 #registry-header {
     z-index: -1;
     background-image: url("/images/registry-header.png");
@@ -142,9 +168,27 @@ body {
 }
 
 .hotel-image {
-    width: 200px;
+    /*width: 200px;*/
 }
 
 .top-buffer {
     margin-top: 40px;
+}
+
+
+.accept-sprite {
+    background: url("/images/accept.png");
+    width: 59px;
+    height: 60px;
+}
+
+.decline-sprite {
+    height: 61px;
+    width: 65px;
+    background: url("/images/decline.png");
+    background-position: bottom;
+}
+
+#rsvp-table td {
+    vertical-align: middle;
 }

@@ -22,7 +22,7 @@ class RsvpController extends \BaseController {
 	{
         $invite = Invite::where('name', '=', $name)->first();
 //		return View::make('rsvp.create')->with('invite', $invite);
-		return View::make('rsvp.create')->with(['invite' => $invite, 'pageTitle' => 'RSVP']);
+		return View::make('rsvp.create')->with(['invite' => $invite]);
 	}
 
 
@@ -33,7 +33,7 @@ class RsvpController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+
 	}
 
 
@@ -69,8 +69,21 @@ class RsvpController extends \BaseController {
      */
 	public function update($invite_id)
 	{
-        dd(Input::all());
-		return $invite_id;
+        /** @var Invite $invite */
+        $invite = Invite::findOrFail($invite_id);
+
+//        dd($invite->guests());
+
+        $invite->rsvp = true;
+        $invite->save();
+
+        foreach($invite->guests as $guest) {
+            /** @var Guest $guest */
+            $guest->attending = (boolean)Input::get('rsvp_' . $guest->id);
+            $guest->save();
+        }
+
+		return Redirect::route('rsvp_path', $invite->name);
 	}
 
 

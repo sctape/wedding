@@ -74,7 +74,7 @@ class GuestsTableSeeder extends Seeder {
                 'zip' => $faker->postcode,
                 'created_at' => $faker->dateTime,
                 'updated_at' => $faker->dateTime,
-                'rsvp' => $faker->boolean()
+                'rsvp' => false
             ]);
 
             foreach($guests as $guest) {
@@ -89,7 +89,7 @@ class GuestsTableSeeder extends Seeder {
                     'invite_id' => $invite->id,
                     'created_at' => $faker->dateTime,
                     'updated_at' => $faker->dateTime,
-                    'attending' => $invite->rsvp ? $faker->boolean() : NULL,
+                    'attending' => NULL
                 ]);
             }
 

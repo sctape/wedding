@@ -104,7 +104,7 @@
 
     <div class="row">
         <div class="col-md-6">
-            <img src="/images/attractions-subheader.png" alt=""/>
+            <img src="/images/attractions-subheader.png" alt="" style="height:135px"/>
         </div>
     </div>
 
@@ -117,7 +117,7 @@
                         The Minnesota Valley National Wildlife Refuge and Fort Snelling State Park are conveniently located near the MSP airport and the Mall of America if you stay near the airport.  Both provide excellent hiking.
                     </li>
                     <li>
-                        Minneapolis is known as the “City of Lakes” and the Chain of Lakes located in South Minneapolis is truly lovely.  You can rent bikes, canoes, kayaks, and pedal boats at Lake Harriet (http://wheelfunrentals.com/Locations/Minneapolis-2) or Lake Calhoun (http://wheelfunrentals.com/Locations/Minneapolis).   Bikes can also be rented through the Nice Ride (https://www.niceridemn.org/how_it_works/) program where you can check out and return bikes to stations located throughout the Minneapolis.
+                        Minneapolis is known as the "City of Lakes" and the Chain of Lakes located in South Minneapolis is truly lovely. You can rent bikes, canoes, kayaks, and pedal boats at <a target="_blank" href="http://wheelfunrentals.com/Locations/Minneapolis-2">Lake Harriet</a> or <a target="_blank" href="http://wheelfunrentals.com/Locations/Minneapolis">Lake Calhoun</a>. Bikes can also be rented through the <a target="_blank" href="https://www.niceridemn.org/how_it_works/">Nice Ride</a> program where you can check out and return bikes to stations located throughout the Minneapolis.
                     </li>
                     <li>
                         Mill Ruins Park, Stone Arch Bridge, and the view from the infinity bridge at the the Guthrie Theater.
@@ -129,7 +129,7 @@
                 <h4>Arts and Culture</h4>
                 <ul>
                     <li>
-                        Walker Art Center and sculpture garden are located near our home and the Artist Designed Mini Golf (http://www.walkerart.org/calendar/2015/walker-green-artist-designed-mini-golf-3) is truly a unique Minneapolis experience.  If you are interested in the Mini Golf, we recommend going as early as possible in the day since tee times fill up quickly and are assigned on a first-come, first-served basis.  Mini Golf passes can be used for museum admission as well.
+                        Walker Art Center and sculpture garden are located near our home and the <a target="_blank" href="http://www.walkerart.org/calendar/2015/walker-green-artist-designed-mini-golf-3">Artist Designed Mini Golf</a> is truly a unique Minneapolis experience.  If you are interested in the Mini Golf, we recommend going as early as possible in the day since tee times fill up quickly and are assigned on a first-come, first-served basis.  Mini Golf passes can be used for museum admission as well.
                     </li>
                     <li>
                         The Minneapolis Institute of Art is free and awesome
@@ -158,7 +158,7 @@
                         <em>Reservations only available for parties of six or more</em>
                     </li>
                     <li>
-                        <a href="http://www.kyatchi.com">Kyatchi</a> is a new addition to the nightborhood and the lemon and salmon pressed sushi sake oshizushi is spectacular.  We love that all the fish is sustainably fished.  The ramen bowl is delicious and the hot dogs are awesome.
+                        <a href="http://www.kyatchi.com">Kyatchi</a> is a new addition to the neighborhood and the lemon and salmon pressed sushi sake oshizushi is spectacular.  We love that all the fish is sustainably fished.  The ramen bowl is delicious and the hot dogs are awesome.
                     </li>
 
                     <li>
@@ -166,7 +166,7 @@
                     </li>
 
                     <li>
-                        <a href="http://www.quang-restaurant.com/">Quang</a> This is Jess and Sam's favorite Vietnamese food in the Twin Cities. The beef pho is immensely flavorful. Don't worry if the place looks busy, they're tables freeing up constantly.
+                        <a href="http://www.quang-restaurant.com/">Quang</a> This is Jess and Sam's favorite Vietnamese food in the Twin Cities. The beef pho is immensely flavorful. Don't worry if the place looks busy, they're tables free up constantly.
                     </li>
 
                     <li>

@@ -47,6 +47,11 @@ class PagesController extends \BaseController {
         return View::make('pages.story');
     }
 
+    public function events()
+    {
+        return View::make('pages.events');
+    }
+
 
 	/**
 	 * Display the specified resource.
