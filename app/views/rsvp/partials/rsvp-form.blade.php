@@ -40,8 +40,13 @@
                                 {{--</label>--}}
                             {{--@endforeach--}}
                         {{--</td>--}}
-                    {{--</tr>--}}
+                    </tr>
                 @endforeach
+                    <tr>
+                        <td>
+                            {{ Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Email address...']) }}
+                        </td>
+                    </tr>
             @endif
         </tbody>
     </table>

@@ -75,6 +75,7 @@ class RsvpController extends \BaseController {
 //        dd($invite->guests());
 
         $invite->rsvp = true;
+        $invite->email = Input::get('email');
         $invite->save();
 
         foreach($invite->guests as $guest) {
@@ -82,6 +83,11 @@ class RsvpController extends \BaseController {
             $guest->attending = (boolean)Input::get('rsvp_' . $guest->id);
             $guest->save();
         }
+
+        Mail::send('emails.rsvp-confirmation', array('invite' => $invite), function($message)
+        {
+            $message->to('3655harrietave@gmail.com', 'Jess and Sam')->subject('RSVP Confirmation');
+        });
 
 		return Redirect::route('rsvp_path', $invite->name);
 	}
