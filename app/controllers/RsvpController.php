@@ -18,7 +18,7 @@ class RsvpController extends \BaseController {
 	 *
 	 * @return Response
 	 */
-	public function create($name)
+	public function create($name = null)
 	{
         $invite = Invite::where('name', '=', $name)->first();
 //		return View::make('rsvp.create')->with('invite', $invite);

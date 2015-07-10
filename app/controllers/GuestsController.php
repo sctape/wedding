@@ -88,5 +88,26 @@ class GuestsController extends \BaseController {
 		//
 	}
 
+    public function search($string) {
+        Log::debug($string);
+
+        $users = DB::table('guests')
+            ->select('name')->distinct()
+            ->join('invites', 'guests.invite_id', '=', 'invites.id')
+            ->orWhere('invites.name', 'LIKE', '%' . $string . '%')
+            ->orWhere('guests.first_name', 'LIKE', '%' . $string . '%')
+            ->orWhere('guests.last_name', 'LIKE', '%' . $string . '%')
+            ->lists('name');
+
+        Log::debug($users);
+
+        $json = [];
+        foreach($users as $user) {
+            $json[] = ['value' => $user];
+        }
+
+        return Response::json($json);
+    }
+
 
 }

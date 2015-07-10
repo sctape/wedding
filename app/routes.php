@@ -27,6 +27,14 @@ Route::group(['before' => 'auth'], function(){
         'uses' => 'RsvpController@create'
     ]);
 
+    Route::get('/rsvp', [
+        'uses' => 'RsvpController@create'
+    ]);
+
+    Route::post('/rsvp', function(){
+        return Redirect::route('rsvp_path', [Request::get('user')]);
+    });
+
     Route::put('rsvp/{invite_id}', [
         'as' => 'rsvp.update',
         'uses' => 'RsvpController@update'
@@ -63,6 +71,10 @@ Route::group(['before' => 'auth'], function(){
     Route::post('/guests', [
         'as' => 'guests_path',
         'uses' => 'GuestsController@store'
+    ]);
+
+    Route::get('/guests/search/{string}', [
+        'uses' => 'GuestsController@search'
     ]);
 
     Route::resource('invites', 'InvitesController');

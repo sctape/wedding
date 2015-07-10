@@ -30,6 +30,9 @@
     {{ Helpers::js() }}
     {{ HTML::script('js/rsvp.js') }}
     {{ HTML::script('js/nav.js') }}
+    {{ HTML::script('bower_components/typeahead.js/dist/typeahead.bundle.js')}}
     <script>$('#flash-overlay-modal').modal();</script>
+
+@yield('javascript')
 </body>
 </html>
