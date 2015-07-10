@@ -13,10 +13,13 @@
 
 Route::get('/', [
         'as' => 'home',
-        'uses' => 'PagesController@home'
+        'uses' => 'PagesController@story'
     ]);
 
-Route::group(['before' => 'auth'], function(){
+Route::group(['before' => 'auth'], function() {
+    Route::resource('invites', 'InvitesController');
+
+});
     Route::get('/locations', [
         'as' => 'locations',
         'uses' => 'PagesController@locations'
@@ -28,6 +31,7 @@ Route::group(['before' => 'auth'], function(){
     ]);
 
     Route::get('/rsvp', [
+        'as' => 'rsvp_no_name',
         'uses' => 'RsvpController@create'
     ]);
 
@@ -77,8 +81,6 @@ Route::group(['before' => 'auth'], function(){
         'uses' => 'GuestsController@search'
     ]);
 
-    Route::resource('invites', 'InvitesController');
-});
 
 
 /**

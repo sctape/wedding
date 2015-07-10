@@ -7,12 +7,10 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
-    @if(Auth::check())
-        <div id="header-img" class="center-block"></div>
+    <div id="header-img" class="center-block"></div>
             {{--<div class="pull-right"><a class="text-muted" href="{{ route('sessions.destroy') }}">Logout</a></div>--}}
             {{--<h1>Sam & Jess Wedding <small>September 6th, 2015</small></h1>--}}
             {{--@include('layouts.partials.nav')--}}
-    @endif
 
     @yield('sub-header')
 
@@ -22,9 +20,7 @@
             @yield('content')
     </div>
 
-    @if(Auth::check())
-        @include('layouts.partials.bottom-nav')
-    @endif
+    @include('layouts.partials.bottom-nav')
 
     <script src="//code.jquery.com/jquery.js"></script>
     {{ Helpers::js() }}
