@@ -16,6 +16,10 @@ Route::get('/', [
         'uses' => 'PagesController@story'
     ]);
 
+Route::get('/{name}', [
+        'uses' => 'RsvpController@create'
+]);
+
 Route::group(['before' => 'auth'], function() {
     Route::resource('invites', 'InvitesController');
 
