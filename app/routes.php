@@ -16,9 +16,7 @@ Route::get('/', [
         'uses' => 'PagesController@story'
     ]);
 
-Route::get('/{name}', [
-        'uses' => 'RsvpController@create'
-]);
+
 
 Route::group(['before' => 'auth'], function() {
     Route::resource('invites', 'InvitesController');
@@ -118,4 +116,8 @@ Route::post('login', ['as' => 'sessions.create', 'uses' =>'SessionsController@st
 Route::get('logout', [
     'as' => 'sessions.destroy',
     'uses' => 'SessionsController@destroy'
+]);
+
+Route::get('/{name}', [
+    'uses' => 'RsvpController@create'
 ]);
