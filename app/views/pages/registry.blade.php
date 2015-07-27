@@ -13,7 +13,8 @@
         </div>
         <div class="col-md-9">
             <p class="lead page-header">
-                You presence and well wishes are plenty but if you want to contribute in other ways, we have a list of objects that will help make our house a home!
+                You presence and well wishes are plenty but if you want to contribute in other ways, we have a list of objects that will help make our house a home!<br/>
+                <a href="https://thankfulregistry.com/jessandsamMPLS">Our Registry</a>
             </p>
         </div>
     </div>
