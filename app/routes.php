@@ -21,6 +21,11 @@ Route::get('/', [
 Route::group(['before' => 'auth'], function() {
     Route::resource('invites', 'InvitesController');
 
+    Route::post('/invites/create', [
+        'as' => 'invites.store',
+        'uses' => 'InvitesController@store'
+    ]);
+
 });
     Route::get('/locations', [
         'as' => 'locations',
